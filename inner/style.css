@@ -1,0 +1,90 @@
+@font-face {
+    src: url('https://wrygrinn.net/fonts/Eurosteal.woff');
+    font-family: 'euro';
+}
+
+@font-face {
+    src: url('https://b3ntn33dl.github.io/fonts/Igiari.woff');
+    font-family: 'ig';
+}
+
+body {
+        font-family: 'ig'; 
+    }
+
+
+h1, h2, h3 {
+    font-family: 'euro';
+}
+
+h4 {
+    font-family: arial black;
+}
+
+p {
+    color: #000;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+li, a {
+    color: #323232;
+}
+
+li, ul {
+    list-style-type: square;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #000 rgba(255, 255, 255, 0);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 10px;
+    border: 3px solid #000;
+  }
+
+blockquote {
+border-left: 9px solid #000;
+background-color: #dddddd;
+padding: 10px;
+}
+
+blockquote h1{
+font-family: "ig";
+}
+
+blockquote h2{
+font-family: "ig";
+}
+
+blockquote h3{
+font-family: "ig";
+}
+    ::selection {
+      color: #626262;
+      background-color: 'transparent';
+    }
+
+#backlink {
+    cursor: pointer;
+}
+
+#backlink:hover {
+    text-decoration: line-through;
+}
