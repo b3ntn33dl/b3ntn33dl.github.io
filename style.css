@@ -1,0 +1,280 @@
+
+@font-face {
+    src: url('https://wrygrinn.net/fonts/Eurosteal.woff');
+    font-family: 'euro';
+}
+
+@font-face {
+    src: url('https://b3ntn33dl.github.io/fonts/Igiari.woff');
+    font-family: 'ig';
+}
+
+@font-face {
+    src: url('https://b3ntn33dl.github.io/fonts/Spritecoder_Regular.woff');
+    font-family: 'sprite';
+}
+
+
+	:root {
+		--text: #000;
+		--border: #000;
+		--accent: #000;
+		--bg: #999;
+		--gradient-top:  #d2d2d2;
+		--gradient-bottom: #ffffff;
+	}
+	header {
+		background: url('https://i.pinimg.com/736x/5f/a8/de/5fa8de0bf26e50be1767928bfd6f4ee5.jpg');
+	}
+
+
+
+* { 
+	box-sizing: border-box;
+}
+html {
+	overscroll-behavior: none;
+	
+}
+body {
+	padding: 9px;
+	font-size: 14px;
+	font-family: 'sprite';
+	background-color: #fff;
+	background-image: url('https://i.pinimg.com/1200x/55/12/44/551244a50e898df9b42c3ac45fa303e5.jpg');
+	background-position: center;
+	background-size: cover;
+	filter: none;
+	letter-spacing: 1px;
+	color: var(--text);
+	width: 100%;
+}
+
+p {
+	font-family: 'ig';
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	
+}
+
+.container {
+	max-width: 52rem;
+	margin: auto;
+	background-color: #000;
+	outline-offset: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+	gap: 7px;
+}
+/* these control the column widths */
+.small { flex: 1 1 2%; }
+.large { flex: 1 1 67%; }
+.full { flex: 1 1 100%; }
+.half { flex: 1 1 34%; }
+
+
+header {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px; /* change banner height here*/
+	border: #000 2px solid;
+	border-radius: 2px;
+	position: relative;
+}
+header span {
+	font-size: 2.5rem;
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+	right: 10px;
+	font-family: euro;
+	margin: 10px;
+	padding: 9px;
+	font-weight: bold;
+	color: #000;
+}
+
+
+nav {
+	border: #000 2px solid;
+	border-radius: 3px;
+	padding: 7px;
+	background: linear-gradient(var(--gradient-top),var(--gradient-bottom));
+}
+nav div {
+	text-align: center;
+	font-size: 1.25rem;
+	margin: 5px 5px 10px 5px;
+}
+nav a {
+	display: block;
+	margin: 5px;
+	margin-left: -4px;
+	font-style: oblique;
+	border-radius: 1px;
+	text-transform: lowercase;
+	padding: 2px 2px;
+	text-decoration: none;
+}
+nav a:link, nav a:visited { 
+	color: #222;
+}
+nav a:hover, nav a:focus {
+	font-weight: bold;
+	letter-spacing: 1.4px;
+	background-color: rgba(0, 0, 0, 0.31);
+}
+
+/* optional button styling like in the preview */
+div.small > img {
+	display: block;
+	margin: 5px auto;
+	border:2px ridge var(--border);
+	border-radius: 4px;
+}
+
+
+section {
+	border: #444 2px solid;
+	border-radius: 3px;
+	background: linear-gradient(var(--gradient-top),var(--gradient-bottom));
+	padding: 5px;
+}
+
+
+footer {
+	text-align: center;
+	margin-bottom: 5vw;
+	font-size: 0.8rem;
+}
+footer a { 
+	text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, p  { 
+	margin: 5px;
+	line-height: 1.2;
+}
+h1 { 
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+	font-family: 'euro';
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+h2 { 
+	font-family: 'euro';
+	font-size: 0.94rem;
+	font-weight: normal;
+}
+h3 { 
+	font-family: 'euro';
+	font-size: 1.1rem;
+}
+h4 { 
+	font-family: 'euro';
+	font-size: 1rem;
+	color: var(--accent);
+	padding-left: 12px;
+}
+
+/* prevents overflow on smaller screens */
+img { max-width: 85%; }
+pre { overflow-x: auto; }
+
+
+a:hover, a:focus {
+font-family: 'sprite';
+}
+a:visited {
+	color: var(--accent);
+}
+
+iframe {
+	border: hidden;
+}
+
+#log {
+	overflow: none;
+}
+
+.contact {
+	width: 22%;
+}
+
+.log {
+	width: 23%;
+}
+
+.navi {
+	width: 17%;
+}
+
+/*maindimensions*/
+.important {
+	margin-top: 9%;
+	width: 19%;
+	margin-left: 0%;
+}
+
+.butt {
+	margin-top: 31%;
+	margin-left: -19.5%;
+	width: 19%;
+}
+
+.themetog {
+	margin-top: 0%;
+	width: 19%;
+	margin-left: -20%;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #fff, #000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 6px;
+    border: 3px solid #fff;
+  }
+
+
+textarea {
+	width: 88px;
+	height: 44px;
+}
+   ::selection {
+      color: #626262;
+      background-color: 'transparent';
+    }
+
+button {
+background-color: #000;
+font-family: 'ig';
+color: #eee;
+border-color: #eee;
+}
+
+button:hover {
+background-color: #000;
+font-family: 'ig';
+color: #ffffff;
+font-weight: bold;
+border-color: #eee;
+}
