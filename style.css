@@ -278,3 +278,24 @@ color: #ffffff;
 font-weight: bold;
 border-color: #eee;
 }
+blockquote {
+border-left: 9px solid #000;
+background-color: #dddddd;
+padding: 10px;
+}
+
+blockquote h1{
+font-family: "ig";
+}
+
+blockquote h2{
+font-family: "ig";
+}
+
+blockquote h3{
+font-family: "ig";
+}
+    ::selection {
+      color: #626262;
+      background-color: 'transparent';
+    }
