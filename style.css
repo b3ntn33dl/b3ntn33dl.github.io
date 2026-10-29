@@ -196,6 +196,10 @@ iframe {
 	border: hidden;
 }
 
+#main {
+height: 399px;
+}
+
 #log {
 	overflow: none;
 }
@@ -230,6 +234,14 @@ iframe {
 	width: 19%;
 	margin-left: -20%;
 }
+
+.ad {
+	margin-top: 32%;
+	margin-left: -19.8%;
+	width: 19%;
+}
+
+
 
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
