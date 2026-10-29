@@ -308,3 +308,68 @@ font-family: "ig";
       color: #626262;
       background-color: 'transparent';
     }
+
+
+/*SMALL*/
+
+ @media only screen and (max-width: 500px) {
+	iframe {
+	border: hidden;
+}
+
+#main {
+height: 399px;
+}
+
+#log {
+	margin-top: 0%;
+	overflow: none;
+}
+
+.contact {
+	margin-top: -23%;
+	width: 29%;
+}
+
+.log {
+	width: 23%;
+}
+
+.navi {
+	width: 29%;
+}
+
+.important {
+	margin-top: 22%;
+	width: 18%;
+	margin-left: 0%;
+	display: none;
+}
+
+.butt {
+	margin-top: 31%;
+	margin-left: -19.5%;
+	width: 19%;
+	display: none;
+}
+
+.themetog {
+	margin-top: 96%;
+	width: 24%;
+	margin-left: -25%;
+}
+
+.ad {
+	margin-top: 32%;
+	margin-left: -19.8%;
+	width: 37%;
+	display: none;
+	
+}
+	 #me{
+		 margin-top: -23%;
+	 }
+
+	}
+
+/*END OF SMALL*/
