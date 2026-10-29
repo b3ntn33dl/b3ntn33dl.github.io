@@ -201,7 +201,7 @@ height: 399px;
 }
 
 #log {
-	overflow: none;
+	overflow: scroll;
 }
 
 .contact {
