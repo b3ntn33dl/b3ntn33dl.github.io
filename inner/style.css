@@ -1,5 +1,5 @@
 @font-face {
-    src: url('https://b3ntn33dl.github.io/fonts/Eurosteal.woff');
+    src: url('https://wrygrinn.net/fonts/Eurosteal.woff');
     font-family: 'euro';
 }
 
@@ -7,7 +7,10 @@
     src: url('https://b3ntn33dl.github.io/fonts/Igiari.woff');
     font-family: 'ig';
 }
-
+@font-face {
+    src: url('https://b3ntn33dl.github.io/fonts/Spritecoder_Regular.woff');
+    font-family: 'sprite';
+}
 body {
         font-family: 'ig'; 
     }
@@ -22,15 +25,19 @@ h4 {
 }
 
 p {
-    color: #000;
-    font-size: 13px;
+    color: #303030;
+    font-size: 14px;
     line-height: 18px;
     font-weight: bold;
     letter-spacing: 2px;
 }
-
-li, a {
+ a {
     color: #323232;
+}
+
+li {
+    color: #100;
+    font-weight: bold;
 }
 
 li, ul {
@@ -66,18 +73,18 @@ padding: 10px;
 }
 
 blockquote h1{
-font-family: "ig";
+font-family: monospace;
 }
 
 blockquote h2{
-font-family: "ig";
+font-family: monospace;
 }
 
 blockquote h3{
-font-family: "ig";
+font-family: monospace;
 }
     ::selection {
-      color: #626262;
+      color: #bababa;
       background-color: 'transparent';
     }
 
@@ -87,4 +94,16 @@ font-family: "ig";
 
 #backlink:hover {
     text-decoration: line-through;
+}
+
+#element {
+    font-size: 17px;
+}
+
+#step {
+    font-family: arial black;
+}
+
+a:hover {
+    color: #af87cb;
 }
