@@ -210,6 +210,9 @@ height: 399px;
 
 .log {
 	width: 23%;
+	max-height: 112px;
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 .navi {
