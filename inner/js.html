@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>hi</title>
+    </head>
+    <body>
+
+<h1>Javascripts</h1>
+<p>This goes over widgets and examples of them being used.</p>
+        
+        
+    </body>
+</html>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
+<h4 id="em">Last.fm Widget</h4>
+
+<p>Track your music... or don't</p>
+
+              <blockquote>
+              <code>
+                  
+                let user = 'username';
+              <br>  let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+                <br>let song = document.querySelector('#song');
+                fetch(url)
+                <br>.then(function (response) {
+                    <br>return response.json()
+                <bR>}).then(function (json) {
+                <br>song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+                <br>});
+
+            
+
+                  </code>
+              
+              </blockquote>
+
+<p id="em">HTML</p>
+
+<blockquote>
+<code>
+                    &lt;!------html-----&gt;
+                  <br><br>
+            &lt;small&gt; &lt;span id="song" style="font-family: ocr a; font-size: 11px; font-weight:bold; color: #f00; margin-top: 300px;"&gt; &lt;span&gt;  &lt;small&gt;  &lt;/center&gt; &lt;/div&gt;
+<script src="/js/music.js"></script>              
+    </code>
+</blockquote>
+
+<h4 id="em">Read More/Less</h4>
+
+ <fieldset>      
+This is an example of <span style="color:#ddd;" id="dots">...</span><span id="more">
+
+              some text
+     </fieldset>
+   </span>
+   
+      <p onclick="hi()" id="open">Read More</p>
+              <!---'MORE2'---->
+              <script>
+function hi() {
+  var dots2 = document.getElementById("dots");
+  var moreText2 = document.getElementById("more");
+  var btnText2 = document.getElementById("open");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read More"; 
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read Less"; 
+    moreText2.style.display = "inline";
+  }
+}
+</script>
+        <style>
+              .hi {
+	height: auto;
+}
+           #more {display: none;  
+           }
+              </style>
+    <br><br>
+       
+
+<ul>
+<p>This works well for condensing blog entires and long paragraphs.</p>
+</ul>
+
+<blockquote>    
+        <code>
+
+                      &lt;script&gt;
+            <br><br>
+function hi() {
+  var dots2 = document.getElementById("dots");
+  var moreText2 = document.getElementById("more");
+  var btnText2 = document.getElementById("open");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read More"; 
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read Less"; 
+    moreText2.style.display = "inline";
+  }
+}
+            <br><br>
+&lt;script&gt;
+            <br><br>
+&lt;!------style this however you want-----&gt;
+
+            <br><Br>
+            
+        &lt;style&gt;
+<br><br>
+              .hi {
+	height: auto;
+}
+            <br>
+            
+           #more {display: none;  
+         }
+            <br><br>
+              &lt;style&gt;
+            
+        </code>
+                  </blockquote>
+
+<p id="em">HTML</p>
+
+<blockquote>
+<code>
+
+                        &lt;!------example txt-----&gt;
+
+            <br><br>
+This is an example of &lt;span style="color:#ddd;" id="dots">...&lt;/span&gt; &lt;span id="more"&gt;
+
+              some text   
+            
+            
+            
+&lt;p onclick="hi()" id="open"&gt;Read More &lt;p&gt;
+
+</code>
+</blockquote>
+
+
+<h4 id="em">Calendar</h4>
+
+<ul>
+<p>This widget in particular enables the ability to add a link to a certian day, such as another website and blog.</p>
+</ul>
+<center>
+<div id="calendar"></div>
+
+<link rel="stylesheet" href="calendar.css"> <script src="calendar.js"> </script>
+</center>
+<p id="em">JS</p>
+
+<blockquote>
+    
+                  <code>
+          
+            
+    const calendarEl = document.getElementById("calendar");
+<br>let current = new Date();
+<br><br>
+function renderCalendar() {
+  <br>if (!calendarEl) return;
+
+  <br><br>
+const year = current.getFullYear();
+<br>  const month = current.getMonth();
+<br><br>
+  const firstDay = new Date(year, month, 1).getDay();
+  <br>const daysInMonth = new Date(year, month + 1, 0).getDate();
+<br><br>
+  const monthName = current.toLocaleString('default', { month: 'long' });
+<br><br>
+  const today = new Date();
+  <br>const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  <br>const posts = {"2026-10-03":"/"};
+  <br><br>
+                      let html = `
+  <br>
+   <br> &lt;div class="cal-header"&gt;
+    <br>&lt;button id="prev"&gt;⇽ &lt;button&gt;
+    <br>&lt;span&gt; ${monthName} ${year} &lt;/span&gt;
+    <br>&lt;button id="next"&gt;⇾ &lt;button&gt;
+  <br>&lt;div>
+<br><Br>
+  <br>&lt;div class="cal-grid"&gt;
+    <br>&lt;div&gt;S&lt;/div&gt;
+    <br>&lt;div&gt;M&lt;/div&gt;
+    <br>&lt;div&gt;T&lt;/div&gt;
+    <br>&lt;div&gt;W&lt;/div&gt;
+    <br>&lt;div&gt;T&lt;/div&gt;
+    <br>&lt;div&gt;F&lt;/div&gt;
+    <br>&lt;div&gt;S&lt;/div&gt;
+  `;
+<br><br>
+  for (let i = 0; i &lt; firstDay; i++) {
+  <br>  html += `&lt;div&gt;&lt;/div&gt;`;
+  }
+
+  <br><br>
+    for (let d = 1; d &lt;= daysInMonth; d++) {
+    <br>const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+<br><br>
+    let classes = "";
+    <br>if (typeof posts !== "undefined" && posts[dateStr]) classes += "has-post ";
+    <br>if (dateStr === todayStr) classes += "today";
+<Br><br>
+    if (typeof posts !== "undefined" && posts[dateStr]) {
+      <br>html += `&lt; div class="${classes.trim()}"&gt; 
+        <br>&lt; a href="/index/${posts[dateStr]}">${d}&lt;/a&gt; 
+     <br> &lt; /div&gt; `;
+    } else {
+      <br> html += `&lt;div class="${classes.trim()}">${d}&lt;/div>`;
+    }
+  }
+<br><br>
+  html += `&lt;/div&gt;`;
+<br><br>
+  calendarEl.innerHTML = html;
+<br><Br>
+  document.getElementById("prev").onclick = () => {
+    <br>current.setMonth(current.getMonth() - 1);
+    <br>renderCalendar();
+  };
+<br><br>
+  document.getElementById("next").onclick = () => {
+  <br>  current.setMonth(current.getMonth() + 1);
+<br>    renderCalendar();
+  };
+}
+<br><br>
+renderCalendar();
+<br>
+let blink = true;
+
+
+                      
+                  </code>
+              </blockquote>
+
+
+<h4 id="em">HTML</h4>
+
+
+
+<blockquote>
+<code>
+          
+        &lt;div id="calendar"&gt;  &lt;div&gt;
+
+    <br><br>
+    &lt;link rel="stylesheet" href="yourcalendar.css"&gt;
+  &lt;script src="yourcalendar.js"&gt; &lt;/script&gt;
+    <br><br>                  
+
+         &lt;/div&gt;
+
+    </code>
+</blockquote>
