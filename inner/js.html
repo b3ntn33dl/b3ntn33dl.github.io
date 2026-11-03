@@ -21,39 +21,89 @@
     }
 </style>
 
-<h4 id="em">Last.fm Widget</h4>
+<h4 id="em">Randomized Array</h4>
 
-<p>Track your music... or don't</p>
+<p>Randomized array or random picker, whatever you want you want to call it, put whatever you want in here.</p>
 
-              <blockquote>
-              <code>
-                  
-                let user = 'username';
-              <br>  let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
-                <br>let song = document.querySelector('#song');
-                fetch(url)
-                <br>.then(function (response) {
-                    <br>return response.json()
-                <bR>}).then(function (json) {
-                <br>song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
-                <br>});
+ <center><button type="button" class="hover-shadow" onclick="random()">Click here!</button>
+          </center>
+          <br>
+<center>
+      <p class="funfact"  id="random2"></p>
+</center>
 
-            
 
-                  </code>
-              
-              </blockquote>
-
+<blockquote>
+<code>
+  var random2 = document.getElementById('random2');
+<br><br>
+var randomOrig = [
+   <br> 'Thing 1',
+    <br>'Thing 2',
+    <br>'Thing 3',
+    <br>'yo mama',<br>
+];
+<br><br>
+var factsemployee = randomOrig.slice(0);
+<br><br>
+function random () {
+    <br>if (!factsemployee.length) {
+        <br>factsemployee = randomOrig.slice(0); // Refill array
+    <br>
+  }
+  <br><br>
+  var i = Math.floor(Math.random() * factsemployee.length) | 0;
+  <br>  random2.innerText = factsemployee[i]
+  <br>  factsemployee.splice(i, 1); // Remove from active array
+<br>}
+<br><br>
+random();
+  </code>
+</blockquote>
+      
 <p id="em">HTML</p>
 
 <blockquote>
 <code>
-                    &lt;!------html-----&gt;
-                  <br><br>
-            &lt;small&gt; &lt;span id="song" style="font-family: ocr a; font-size: 11px; font-weight:bold; color: #f00; margin-top: 300px;"&gt; &lt;span&gt;  &lt;small&gt;  &lt;/center&gt; &lt;/div&gt;
-<script src="/js/music.js"></script>              
-    </code>
+  &lt;button type="button" class="hover-shadow" onclick="random()"&gt; Click here!&lt;button&gt;
+  <br>
+  &lt;br&gt;
+  <br>
+  
+        &lt;p class="funfact"  id="random2">&lt;/p&gt;
+
+  </code>
 </blockquote>
+
+        
+<script>
+
+  
+var random2 = document.getElementById('random2');
+
+var randomOrig = [
+    'Thing 1',
+    'Thing 2',
+    'Thing 3',
+    'yo mama',
+];
+
+var factsemployee = randomOrig.slice(0);
+
+function random () {
+    if (!factsemployee.length) {
+        factsemployee = randomOrig.slice(0);
+    }
+    var i = Math.floor(Math.random() * factsemployee.length) | 0;
+    random2.innerText = factsemployee[i]
+    factsemployee.splice(i, 1); 
+}
+
+random();
+</script>
+
+
+
 
 <h4 id="em">Read More/Less</h4>
 
@@ -157,6 +207,43 @@ This is an example of &lt;span style="color:#ddd;" id="dots">...&lt;/span&gt; &l
 
 </code>
 </blockquote>
+
+
+
+<h4 id="em">Last.fm Widget</h4>
+
+<p>Track your music... or don't</p>
+
+              <blockquote>
+              <code>
+                  
+                let user = 'username';
+              <br>  let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+                <br>let song = document.querySelector('#song');
+                fetch(url)
+                <br>.then(function (response) {
+                    <br>return response.json()
+                <bR>}).then(function (json) {
+                <br>song.innerHTML = json['track']['name'] + ' - ' + json['track']['artist']['#text'];
+                <br>});
+
+            
+
+                  </code>
+              
+              </blockquote>
+
+<p id="em">HTML</p>
+
+<blockquote>
+<code>
+                    &lt;!------html-----&gt;
+                  <br><br>
+            &lt;small&gt; &lt;span id="song" style="font-family: ocr a; font-size: 11px; font-weight:bold; color: #f00; margin-top: 300px;"&gt; &lt;span&gt;  &lt;small&gt;  &lt;/center&gt; &lt;/div&gt;
+<script src="/js/music.js"></script>              
+    </code>
+</blockquote>
+
 
 
 <h4 id="em">Calendar</h4>
