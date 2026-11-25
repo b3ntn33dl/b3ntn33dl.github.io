@@ -8,7 +8,6 @@
     </head>
     <body>
         
-        <p id="em">Click <a style="color: #fff200;" href="#ex">here</a> to jump down to extra tags</p>
         
         <h1>CSS</h1>
         
@@ -16,6 +15,118 @@
 		
     <p>In this section, I will be going over various CSS elements and displaying them.</p>
 
+      
+    
+        <h4 id="element">* &lcub;</h4>
+        
+                <p>filter: grayscale(0.5);</p>
+
+  <p style="cursor: help;">cursor: help;</p>
+
+        <p> <i style="color: rgba(0, 0, 0, 0.64);">/* Other filters include, invert, contrast and hue-rotate. */</i></p>
+<p> <i style="color: rgba(0, 0, 0, 0.64);">/* there are several preset cursor styles such as 'help', 'not-allowed', 'cell' and many others. You can also add custom cursors via images. */</i></p>
+
+   <h4 id="element">&rcub;</h4>
+       
+    
+        
+        <h4 id="element">HTML &lcub;</h4>
+        
+ <p> <i style="color: rgba(0, 0, 0, 0.64);">/* this is self explanitory. */</i></p>
+       
+        
+        <p>background-image: url('image.png');</p>
+        <p>background-attachment: fixed;</p>
+        <p>background-size: cover;</p>
+        <p>background-position: top;</p>
+        <p>font-family: <hi style="font-family: arial;">arial</hi>;</p>
+        <p>letter-spacing: 1px;</p>
+        <p>color: <hi style="background: #000; color: #fff;">#000;</hi></p>
+        <p>overflow: auto;</p>
+        <p>background-color: <hi style="background: #000; color: #fff;">#eee;</hi></p>
+
+        <h4>&rcub;</h4>
+
+        
+        
+        
+    <h4 id="element">.CONTAINER &lcub;</h4>
+
+<p> <i style="color: rgba(0, 0, 0, 0.64);">/* This is so whatever you want to contain STAYS contained, it could also be if you want something to be centered or in a specific margin. */</i></p>
+   
+        <p>width: 500x;</p>
+        <p>height: 600px;</p>
+        <p>padding: 5px;</p>
+        <p>margin: auto;</p>
+        <p>background-color: <hi style="color: #000; background: #eee;">#eee;</hi></p>
+        <p>border: solid 1px <hi style="color: #fff; background: #000;">#000;</hi></p>
+        
+        <h4>&rcub;</h4>
+      
+
+       
+
+        
+        <h4 id="element">.TOOLTIP &lcub;</h4>
+        <p>text-decoration:none;</p>
+        <p>position:relative;</p>
+        <h4>&rcub;</h4>
+
+        
+    <h4 id="element">.TOOLTIP SPAN &lcub;</h4>
+        <p>color: #000;</p>
+        <p>display:none;</p>
+        <p>background: #fff;</p>
+        <p>outline: 2px solid #000;</p>
+        <p>padding: 3px;</p>
+        <p>font-size: 12px;</p>
+        <p>font-family: verdana;</p>
+        <p>font-style: normal;</p>
+        <p>z-index: 100;</p>
+        <h4>&rcub;</h4>
+        
+        
+<h4 id="element">.TOOLTIP:HOVER SPAN &lcub;</h4> 
+        <p>display:block;</p>
+        <p>position:fixed;</p>
+        <p>overflow:hidden;</p>
+        <p>z-index: 100;</p>
+        <h4>&rcub;</h4>
+    
+<p id="em" class="tooltip" style="cursor: help;"> Hover me! <span> Tooltips also involve javascript. <br> Look at the Javascript tab for more.</span></p>        
+
+                <script>
+        
+var tooltips = document.querySelectorAll('.tooltip span');
+
+window.onmousemove = function (e) {
+    var x = (e.clientX + 20) + 'px',
+        y = (e.clientY + 20) + 'px';
+    for (var i = 0; i < tooltips.length; i++) {
+        tooltips[i].style.top = y;
+        tooltips[i].style.left = x;
+    }
+};
+
+        </script>
+        
+<h4 id="element">.CUSTOMELEMENT &lcub;</h4>
+
+ <p> <i style="color: rgba(0, 0, 0, 0.64);">/* Any element starting with a period '.' leaves the ability to customize the name of an element */</i></p>
+        
+ <p>element content goes here</p>
+        
+    <h4>&rcub;</h4>
+        
+        
+    
+        
+        
+        
+        
+                <H4><I>--------- BASIC STUFF ---------</I></H4>
+
+        
         <h4 id="element">:ROOT &lcub;</h4> 
         
         <p><i style="color: rgba(0, 0, 0, 0.64);">
@@ -69,21 +180,8 @@
         
 <h4 id="element">&rcub;</h4>
 
-<br>
-        
-<p>========================================</p>
-        
-<h4 id="ex" id="em">********EXTRA TAGS*********</h4>
-        
-<p>Extra CSS tags, not what I would personally consider "essential".</p>
-        <p>These are not their own tags, these specifically go under tags.</p>
-  
-        <h4>filter: grayscale(1);</h4>
-        
-<p> <i style="color: rgba(0, 0, 0, 0.64);">/* Other filters include, invert, contrast and hue-rotate. */</i></p>
-        
-        
-        <h4 id="em">(WORK IN PROGRESS)</h4>
+
+
 
     </body>
 </html>
