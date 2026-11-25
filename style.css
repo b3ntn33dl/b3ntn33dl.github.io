@@ -33,7 +33,6 @@
 }
 html {
 	overscroll-behavior: none;
-	
 }
 body {
 	padding: 9px;
@@ -47,6 +46,7 @@ body {
 	letter-spacing: 1px;
 	color: var(--text);
 	width: 100%;
+	overflow-x: hidden;
 }
 
 p {
@@ -336,6 +336,7 @@ height: 399px;
 
 .log {
 	width: 23%;
+	overflow-x: hidden;
 }
 
 .navi {
@@ -376,6 +377,8 @@ height: 399px;
 	}
 
 /*END OF SMALL*/
+
+
 
 .tooltip {
     text-decoration:none;
