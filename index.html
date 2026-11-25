@@ -36,16 +36,16 @@
 					<div class="navi" class="small">
 			<nav>
 				<h3>NAVI</h3>
-				<a href="/inner/main" target="poop">Main</a>
-				<a href="/inner/tuts.html" target="poop">Tutorials</a>
-				<a href="/inner/hosting.html" target="poop">Hosting</a>
-				<a href="/inner/fonts.html" target="poop">Fonts</a>
-				<a href="/inner/templates.html" target="poop">Templates</a>
-				<a href="/inner/css.html" target="poop">CSS</a>
-				<a href="/inner/js.html" target="poop">Javascript</a>
-				<a href="/inner/404.html" target="poop">Graphics.</a>
-				<a href="/inner/sites.html" target="poop">Sites!</a>
-				<a href="/inner/cited.html" target="poop"> Cited</a>
+				<a href="/b3ntn33dl.github.io-main/inner/main.html" target="poop">Main</a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/tuts.html" target="poop">Tutorials <span>Navigating HTML and site building, ect.</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/hosting.html" target="poop">Hosting <span>Site hosters and their pros and cons</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/fonts.html" target="poop">Fonts <span>Where to find fonts and how to convert them</span></a>
+				<a class="tooltip"href="/b3ntn33dl.github.io-main/inner/templates.html" target="poop">Templates <span>Where to find templates</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/css.html" target="poop">CSS <span>Various CSS tags and how to utilize them</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/js.html" target="poop">Javascript <span>Showcasing widgets involving <br> javascript and other things utilizing JS</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/404.html" target="poop">Graphics <span>Graphics sites</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/sites.html" target="poop">Sites! <span>Other sites to check out!</span></a>
+				<a class="tooltip" href="/b3ntn33dl.github.io-main/inner/cited.html" target="poop"> Cited <span>What I've used to develop the site</span></a>
 
 <p>&nbsp;</p>
 			<br><br><br><br><br>
@@ -103,6 +103,9 @@
 		
 		<section class="log" id="log" class="half">
 			<h2>Change log:</h2>
+			
+			<p>25/11/26: Added  more stuff to  Javascript and CSS pages </p>
+			
 			<p>02/11/26: Added CSS link</p>
 			
 			<p>29/10/26: Adjusted margins for smaller devices</p>
@@ -136,5 +139,53 @@ document.querySelector('#normal').addEventListener('click', () => {
   root.style.filter = ''
 })
 </script>
+	
+	
+	
+	
+	
+	<script>
+
+
+left = 37,up = 38, right = 39,down = 40
+
+$(document).keydown(function(e) {
+switch(e.which) {
+    case 37:
+    $( "#prev" ).click();
+    break;
+
+    case 38:
+    $( "#prev" ).click();
+    break;
+
+    case 39:
+    $( "#next" ).click();
+    break;
+
+    case 40:
+    $( "#next" ).click();
+    break;
+
+    default: return;
+}
+e.preventDefault();
+
+});
+
+</script>
+
+	<script>
+	var tooltips = document.querySelectorAll('.tooltip span');
+window.onmousemove = function (e) {
+var x = (e.clientX + 20) + 'px',
+y = (e.clientY + 20) + 'px';
+for (var i = 0; i < tooltips.length; i++) {
+tooltips[i].style.top = y;
+tooltips[i].style.left = x; } };
+	</script>
+	
+	
+	
 </body>
 </html>
