@@ -114,3 +114,26 @@ a:hover {
     padding: 2px;
     color: #fff;
 }
+
+.tooltip {
+    text-decoration:none;
+    position:relative;
+}
+.tooltip span {
+    color: #000;
+    display:none;
+    background: #fff;
+    outline: 2px solid #000;
+    padding: 3px;
+    font-size: 12px;
+    font-family: verdana;
+	font-style: normal;
+    z-index: 100;
+
+}
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+    z-index: 100;
+}
