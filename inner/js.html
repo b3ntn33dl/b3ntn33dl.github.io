@@ -75,6 +75,7 @@ random();
   </code>
 </blockquote>
 
+<br><br>
         
 <script>
 
@@ -169,7 +170,17 @@ function hi() {
 }
             <br><br>
 &lt;script&gt;
-            <br><br>
+           
+            
+        </code>
+                  </blockquote>
+
+<p id="em">HTML</p>
+
+<blockquote>
+<code>
+          &lt;p onclick="hi()" id="open"&gt;Read More&lt;p&gt;
+ <br><br>
 &lt;!------style this however you want-----&gt;
 
             <br><Br>
@@ -185,11 +196,65 @@ function hi() {
          }
             <br><br>
               &lt;style&gt;
-            
-        </code>
-                  </blockquote>
+    </code>
+</blockquote>
+
+
+<br><br>
+
+
+<h4 id="em">Tooltip</h4>
+
+<p>Tooltips are small text bubbles that appear when you hover over a text or an image, usually adding some extra commentary or even another image.</p>
+
+<p class="tooltip" style="text-decoration: underline double; cursor: help;"> Hover here! <span>This is a tooltip.</span></p>        
+
+<script>
+        
+var tooltips = document.querySelectorAll('.tooltip span');
+
+window.onmousemove = function (e) {
+    var x = (e.clientX + 20) + 'px',
+        y = (e.clientY + 20) + 'px';
+    for (var i = 0; i < tooltips.length; i++) {
+        tooltips[i].style.top = y;
+        tooltips[i].style.left = x;
+    }
+};
+
+        </script>
+
+
+<blockquote>
+<code>
+    var tooltips = document.querySelectorAll('.tooltip span');
+<br>
+window.onmousemove = function (e) {
+<br>
+    var x = (e.clientX + 20) + 'px',
+    <br>
+    y = (e.clientY + 20) + 'px';
+    <br>
+    for (var i = 0; i  &lt; tooltips.length; i++) {
+    <br>    
+    tooltips[i].style.top = y;
+    <br>    
+    tooltips[i].style.left = x;
+    }
+};
+</code>
+</blockquote>
+
 
 <p id="em">HTML</p>
+
+<blockquote>
+<code>&lt;p class="tooltip" style="text-decoration: underline double; cursor: help;"&gt; Hover here! &lt;span&gt;This is a tooltip.&lt;span&gt; &lt;p&gt;        
+<br>
+    <br>
+    &lt;------this can also be done with links as well. You can also put images inside of a tooltip.-------&gt;
+    </code>
+</blockquote>
 
 <blockquote>
 <code>
@@ -209,6 +274,7 @@ This is an example of &lt;span style="color:#ddd;" id="dots">...&lt;/span&gt; &l
 </blockquote>
 
 
+<br><br>
 
 <h4 id="em">Last.fm Widget</h4>
 
@@ -244,7 +310,7 @@ This is an example of &lt;span style="color:#ddd;" id="dots">...&lt;/span&gt; &l
     </code>
 </blockquote>
 
-
+<br><br>
 
 <h4 id="em">Calendar</h4>
 
@@ -346,7 +412,7 @@ let blink = true;
               </blockquote>
 
 
-<h4 id="em">HTML</h4>
+<p id="em">HTML</p>
 
 
 
