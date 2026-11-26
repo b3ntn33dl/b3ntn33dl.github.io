@@ -1,15 +1,15 @@
 @font-face {
-    src: url('https://b3ntn33dl.github.io/fonts/Eurosteal.woff');
+    src: url('/fonts/Eurosteal.woff');
     font-family: 'euro';
 }
 
 @font-face {
-    src: url('https://b3ntn33dl.github.io/fonts/Igiari.woff');
+    src: url('/fonts/Igiari.woff');
     font-family: 'ig';
 }
 
 @font-face {
-    src: url('https://b3ntn33dl.github.io/fonts/Spritecoder_Regular.woff');
+    src: url('/fonts/Spritecoder_Regular.woff');
     font-family: 'sprite';
 }
 
